@@ -7,6 +7,7 @@ QA.gif
 기획의도.jpg
 까짓거.png
 끄덕.gif
+나니가와루이.jpeg
 날먹OFF.png
 날먹ON.png
 뇌폭.gif
