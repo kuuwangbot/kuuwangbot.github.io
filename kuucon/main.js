@@ -1,14 +1,22 @@
 fetch('../img/emoji.json')
   .then((response) => response.json())
-  .then((json) => {
-    console.log(json);
-    processJsonData(json); // Call a separate function to process the JSON data
+  .then((data) => {
+    const emojiList = data.emojiList;
+    const maxLength = Object.keys(emojiList).length;
+    console.log('Max length of emojiList:', maxLength);
+
+    const kuuconListDiv = document.getElementById('kuuconList');
+
+    // Display each image
+    for (const emoji in emojiList) {
+      const emojiImage = emojiList[emoji];
+      console.log(emoji, emojiImage);
+
+      const imgElement = document.createElement('img');
+      imgElement.src = emojiImage;
+      kuuconListDiv.appendChild(imgElement);
+    }
   })
   .catch((error) => {
     console.log('Error loading JSON file:', error);
   });
-
-function processJsonData(json) {
-  console.log(json[1]); // Accessing json[1] outside the fetch() call
-  // Other code that uses the JSON data
-}
