@@ -3,4 +3,4 @@ fetch('../img/emoji.json')
     .then((json) => console.log(json));
 
 
-console.log(emojiList[1])
+console.log(json[1])
