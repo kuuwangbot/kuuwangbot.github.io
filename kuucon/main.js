@@ -1,2 +1,2 @@
-const kuucon = require('../img/emoji.json')
+const kuucon = require('./img/emoji.json')
 console.log(kuucon)
