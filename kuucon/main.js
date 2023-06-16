@@ -13,7 +13,7 @@ fetch('../img/emoji.json')
       console.log(emoji, emojiImage);
 
       const imgElement = document.createElement('img');
-      imgElement.src = emojiImage;
+      imgElement.src = "../img/" + emojiImage;
       kuuconListDiv.appendChild(imgElement);
     }
   })
